@@ -122,8 +122,9 @@ export default function HomePage() {
 			`}</style>
 			{/* Header */}
 			<header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-				<div className="container flex h-14 items-center justify-between px-4">
-					<div className="flex items-center space-x-2">
+				<div className="flex h-14 items-center max-w-7xl mx-auto">
+					{/* Logo */}
+					<div className="flex items-center space-x-2 px-4">
 						<img
 							src={getLogoImage()}
 							alt="MANDYTEC Logo"
@@ -131,7 +132,9 @@ export default function HomePage() {
 						/>
 						<span className="text-xl font-bold text-foreground">MANDYTEC</span>
 					</div>
-					<nav className="hidden lg:flex items-center space-x-6">
+
+					{/* Navigation - centered */}
+					<nav className="hidden lg:flex items-center space-x-6 mx-auto">
 						<Link
 							href="#naics"
 							className={`text-sm font-medium transition-colors relative pb-1 ${
@@ -204,7 +207,7 @@ export default function HomePage() {
 						</Link>
 					</nav>
 
-					<div className="flex items-center space-x-4">
+					<div className="flex items-center space-x-4 px-4">
 						{/* Mobile menu button */}
 						<div className="lg:hidden">
 							<Button
