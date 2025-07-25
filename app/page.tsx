@@ -113,6 +113,12 @@ export default function HomePage() {
 				html {
 					scroll-behavior: smooth;
 				}
+				.hero-heading-light {
+					text-shadow: 0 2px 12px rgba(0, 0, 0, 0.18), 0 1px 0 #fff;
+				}
+				.hero-subheading-light {
+					text-shadow: 0 1px 8px rgba(0, 0, 0, 0.12), 0 1px 0 #fff;
+				}
 			`}</style>
 			{/* Header */}
 			<header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -239,20 +245,38 @@ export default function HomePage() {
 					}}
 				/>
 				{/* Theme-aware overlay for better text readability */}
-				<div className="absolute inset-0 bg-background/60 dark:bg-black/70" />
+				<div
+					className="absolute inset-0"
+					style={{
+						background:
+							mounted && resolvedTheme === 'light'
+								? 'rgba(255,255,255,0.78)'
+								: 'rgba(0,0,0,0.70)',
+					}}
+				/>
 
 				<div className="container px-4 mx-auto relative z-10">
 					<div className="mx-auto max-w-4xl text-center">
 						<Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-100 dark:bg-blue-900 dark:text-blue-200 shadow-lg">
 							Trusted Government Contractor
 						</Badge>
-						<h1 className="mb-6 text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl drop-shadow-lg">
+						<h1
+							className={`mb-6 text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl drop-shadow-lg ${
+								mounted && resolvedTheme === 'light' ? 'hero-heading-light' : ''
+							}`}
+						>
 							Winning Government Contracts in{' '}
 							<span className="text-blue-600 dark:text-blue-300 drop-shadow-lg">
 								Technology & R&D
 							</span>
 						</h1>
-						<p className="mb-8 text-xl text-gray-700 dark:text-gray-100 sm:text-2xl drop-shadow-lg font-medium">
+						<p
+							className={`mb-8 text-xl text-gray-700 dark:text-gray-100 sm:text-2xl drop-shadow-lg font-medium ${
+								mounted && resolvedTheme === 'light'
+									? 'hero-subheading-light'
+									: ''
+							}`}
+						>
 							Specialized expertise in 5 key NAICS codes. From custom
 							programming to research & development, we deliver mission-critical
 							solutions for federal agencies.
