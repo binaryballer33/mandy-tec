@@ -14,27 +14,34 @@ const naicsCodes = [
 	{
 		code: '541511',
 		title: 'Custom Computer Programming Services',
-		description: 'Tailored software solutions for government agencies',
+		description: 'Tailored Software Solutions For Government Agencies',
 	},
 	{
 		code: '541512',
 		title: 'Computer Systems Design Services',
-		description: 'Enterprise-grade system architecture and design',
+		description: 'Enterprise-Grade System Architecture And Design',
+	},
+	{
+		code: '513210',
+		title: 'Software Publishers',
+		description:
+			'Producing and Distributing Software, Including Design, Documentation, Installation, and Support.',
 	},
 	{
 		code: '541519',
 		title: 'Other Computer Related Services',
-		description: 'Comprehensive IT consulting and support services',
+		description: 'Comprehensive IT Consulting And Support Services',
 	},
 	{
 		code: '518210',
 		title: 'Computing Infrastructure Providers',
-		description: 'Data processing, web hosting, and cloud services',
+		description: 'Data Processing, Web Hosting, And Cloud Services',
 	},
 	{
-		code: '541715',
-		title: 'Research and Development',
-		description: 'Physical, engineering, and life sciences R&D',
+		code: '517210',
+		title: 'Wireless Telecommunications Services',
+		description:
+			'Transmitting Voice, Data, And Multimedia Information Over Radio Frequencies',
 	},
 ]
 
@@ -44,11 +51,10 @@ export default function NAICS() {
 			<div className="container px-4 mx-auto">
 				<div className="mx-auto max-w-2xl text-center mb-16">
 					<h2 className="text-3xl font-bold text-foreground sm:text-4xl">
-						Our NAICS Code Specializations
+						NAICS Code Specializations
 					</h2>
 					<p className="mt-4 text-lg text-muted-foreground">
-						We excel in these specific areas, with proven success in winning and
-						executing contracts
+						We Excel In These Specific Areas
 					</p>
 				</div>
 

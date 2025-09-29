@@ -21,6 +21,102 @@ import {
 } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 
+type TechnicalCapability = {
+	id: string
+	title: string
+	description: string
+	icon: React.ElementType
+	iconColor: string
+	features: string[]
+}
+
+const technicalCapabilities: TechnicalCapability[] = [
+	{
+		id: 'help-desk',
+		title: 'Enterprise Help Desk Operations',
+		description:
+			'Multi-tiered Technical Support Infrastructure With 24/7/365 Availability, ITIL-Compliant Service Management, And Advanced Ticketing Systems.',
+		icon: Users,
+		iconColor: 'bg-blue-500',
+		features: [
+			'Level 1-3 Escalation Procedures',
+			'ServiceNow & Remedy Integration',
+			'SLA Compliance Monitoring',
+			'Remote Desktop & Mobile Device Support',
+		],
+	},
+	{
+		id: 'network-engineering',
+		title: 'Network Engineering & Architecture',
+		description:
+			'Advanced Network Design, Implementation, And Optimization Using Enterprise-Grade Routing, Switching, And Security Protocols.',
+		icon: Globe,
+		iconColor: 'bg-green-500',
+		features: [
+			'Cisco & Juniper Enterprise Solutions',
+			'SD-WAN & MPLS Implementation',
+			'Network Segmentation & Microsegmentation',
+			'BGP, OSPF, EIGRP Routing Protocols',
+		],
+	},
+	{
+		id: 'systems-engineering',
+		title: 'Systems Engineering & Administration',
+		description:
+			'Comprehensive Systems Lifecycle Management Including Virtualization, Containerization, And Hybrid Cloud Orchestration.',
+		icon: Server,
+		iconColor: 'bg-purple-500',
+		features: [
+			'VMware vSphere & Hyper-V Virtualization',
+			'Kubernetes & Docker Containerization',
+			'Infrastructure as Code (Terraform, Ansible)',
+			'Linux/Windows Enterprise Administration',
+		],
+	},
+	{
+		id: 'cybersecurity',
+		title: 'Advanced Cybersecurity Operations',
+		description:
+			'Comprehensive Security Operations Including Threat Hunting, Incident Response, And Compliance Management For Classified Environments.',
+		icon: Shield,
+		iconColor: 'bg-red-500',
+		features: [
+			'SIEM/SOAR Platform Management',
+			'Penetration Testing & Vulnerability Assessment',
+			'NIST, FISMA, FedRAMP Compliance',
+			'Zero Trust Architecture Implementation',
+		],
+	},
+	{
+		id: 'ai-ml',
+		title: 'Artificial Intelligence & Machine Learning',
+		description:
+			'Advanced AI/ML Solutions Including Natural Language Processing, Computer Vision, And Predictive Analytics For Government Applications.',
+		icon: Brain,
+		iconColor: 'bg-orange-500',
+		features: [
+			'TensorFlow & PyTorch Model Development',
+			'MLOps Pipeline Automation',
+			'Large Language Model Integration',
+			'Edge AI & Real-Time Inference',
+		],
+	},
+	{
+		id: 'software-engineering',
+		title: 'Software Engineering & Web Solutions',
+		description:
+			'Full-stack Application Development With Modern Frameworks, Microservices Architecture, And Enterprise-Grade Hosting Solutions. Also Provide Solutions For Legacy Systems.',
+		icon: Code,
+		iconColor: 'bg-indigo-500',
+		features: [
+			'Next JS, React, Angular, Vue.js Frontend Frameworks',
+			'Microservices & API Gateway Architecture',
+			'CI/CD Pipeline Automation',
+			'AWS / Azure /Google GCP Cloud-Native Hosting',
+		],
+	},
+]
+
 export default function TechnicalCapabilities() {
 	return (
 		<section
@@ -34,250 +130,52 @@ export default function TechnicalCapabilities() {
 							Core Technical Competencies
 						</Badge>
 						<h2 className="text-3xl font-bold sm:text-4xl mb-4">
-							Advanced Technical Capabilities
+							Technical Capabilities
 						</h2>
 						<p className="text-xl text-blue-100">
-							Enterprise-grade technical services designed for mission-critical
-							government operations
+							Enterprise-Grade Technical Services Designed For Mission-Critical
+							Government Operations
 						</p>
 					</div>
 
 					<div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-						{/* Help Desk Support */}
-						<Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/15 transition-all">
-							<CardHeader>
-								<div className="flex items-center space-x-3 mb-4">
-									<div className="p-2 bg-blue-500 rounded-lg">
-										<Users className="h-6 w-6" />
-									</div>
-									<CardTitle className="text-xl">
-										Enterprise Help Desk Operations
-									</CardTitle>
-								</div>
-							</CardHeader>
-							<CardContent>
-								<CardDescription className="text-gray-200 mb-4">
-									Multi-tiered technical support infrastructure with 24/7/365
-									availability, ITIL-compliant service management, and advanced
-									ticketing systems.
-								</CardDescription>
-								<div className="space-y-2 text-sm">
-									<div className="flex items-center space-x-2">
-										<CheckCircle className="h-4 w-4 text-green-400" />
-										<span>Level 1-3 escalation procedures</span>
-									</div>
-									<div className="flex items-center space-x-2">
-										<CheckCircle className="h-4 w-4 text-green-400" />
-										<span>ServiceNow & Remedy integration</span>
-									</div>
-									<div className="flex items-center space-x-2">
-										<CheckCircle className="h-4 w-4 text-green-400" />
-										<span>SLA compliance monitoring</span>
-									</div>
-									<div className="flex items-center space-x-2">
-										<CheckCircle className="h-4 w-4 text-green-400" />
-										<span>Remote desktop & mobile device support</span>
-									</div>
-								</div>
-							</CardContent>
-						</Card>
+						{technicalCapabilities.map((capability) => {
+							const IconComponent = capability.icon
 
-						{/* Network Engineering */}
-						<Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/15 transition-all">
-							<CardHeader>
-								<div className="flex items-center space-x-3 mb-4">
-									<div className="p-2 bg-green-500 rounded-lg">
-										<Globe className="h-6 w-6" />
-									</div>
-									<CardTitle className="text-xl">
-										Network Engineering & Architecture
-									</CardTitle>
-								</div>
-							</CardHeader>
-							<CardContent>
-								<CardDescription className="text-gray-200 mb-4">
-									Advanced network design, implementation, and optimization
-									using enterprise-grade routing, switching, and security
-									protocols.
-								</CardDescription>
-								<div className="space-y-2 text-sm">
-									<div className="flex items-center space-x-2">
-										<CheckCircle className="h-4 w-4 text-green-400" />
-										<span>Cisco & Juniper enterprise solutions</span>
-									</div>
-									<div className="flex items-center space-x-2">
-										<CheckCircle className="h-4 w-4 text-green-400" />
-										<span>SD-WAN & MPLS implementation</span>
-									</div>
-									<div className="flex items-center space-x-2">
-										<CheckCircle className="h-4 w-4 text-green-400" />
-										<span>Network segmentation & microsegmentation</span>
-									</div>
-									<div className="flex items-center space-x-2">
-										<CheckCircle className="h-4 w-4 text-green-400" />
-										<span>BGP, OSPF, EIGRP routing protocols</span>
-									</div>
-								</div>
-							</CardContent>
-						</Card>
-
-						{/* System Engineering */}
-						<Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/15 transition-all">
-							<CardHeader>
-								<div className="flex items-center space-x-3 mb-4">
-									<div className="p-2 bg-purple-500 rounded-lg">
-										<Server className="h-6 w-6" />
-									</div>
-									<CardTitle className="text-xl">
-										Systems Engineering & Administration
-									</CardTitle>
-								</div>
-							</CardHeader>
-							<CardContent>
-								<CardDescription className="text-gray-200 mb-4">
-									Comprehensive systems lifecycle management including
-									virtualization, containerization, and hybrid cloud
-									orchestration.
-								</CardDescription>
-								<div className="space-y-2 text-sm">
-									<div className="flex items-center space-x-2">
-										<CheckCircle className="h-4 w-4 text-green-400" />
-										<span>VMware vSphere & Hyper-V virtualization</span>
-									</div>
-									<div className="flex items-center space-x-2">
-										<CheckCircle className="h-4 w-4 text-green-400" />
-										<span>Kubernetes & Docker containerization</span>
-									</div>
-									<div className="flex items-center space-x-2">
-										<CheckCircle className="h-4 w-4 text-green-400" />
-										<span>Infrastructure as Code (Terraform, Ansible)</span>
-									</div>
-									<div className="flex items-center space-x-2">
-										<CheckCircle className="h-4 w-4 text-green-400" />
-										<span>Linux/Windows enterprise administration</span>
-									</div>
-								</div>
-							</CardContent>
-						</Card>
-
-						{/* Cybersecurity */}
-						<Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/15 transition-all">
-							<CardHeader>
-								<div className="flex items-center space-x-3 mb-4">
-									<div className="p-2 bg-red-500 rounded-lg">
-										<Shield className="h-6 w-6" />
-									</div>
-									<CardTitle className="text-xl">
-										Advanced Cybersecurity Operations
-									</CardTitle>
-								</div>
-							</CardHeader>
-							<CardContent>
-								<CardDescription className="text-gray-200 mb-4">
-									Comprehensive security operations including threat hunting,
-									incident response, and compliance management for classified
-									environments.
-								</CardDescription>
-								<div className="space-y-2 text-sm">
-									<div className="flex items-center space-x-2">
-										<CheckCircle className="h-4 w-4 text-green-400" />
-										<span>SIEM/SOAR platform management</span>
-									</div>
-									<div className="flex items-center space-x-2">
-										<CheckCircle className="h-4 w-4 text-green-400" />
-										<span>Penetration testing & vulnerability assessment</span>
-									</div>
-									<div className="flex items-center space-x-2">
-										<CheckCircle className="h-4 w-4 text-green-400" />
-										<span>NIST, FISMA, FedRAMP compliance</span>
-									</div>
-									<div className="flex items-center space-x-2">
-										<CheckCircle className="h-4 w-4 text-green-400" />
-										<span>Zero Trust architecture implementation</span>
-									</div>
-								</div>
-							</CardContent>
-						</Card>
-
-						{/* AI Support */}
-						<Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/15 transition-all">
-							<CardHeader>
-								<div className="flex items-center space-x-3 mb-4">
-									<div className="p-2 bg-orange-500 rounded-lg">
-										<Brain className="h-6 w-6" />
-									</div>
-									<CardTitle className="text-xl">
-										Artificial Intelligence & Machine Learning
-									</CardTitle>
-								</div>
-							</CardHeader>
-							<CardContent>
-								<CardDescription className="text-gray-200 mb-4">
-									Advanced AI/ML solutions including natural language
-									processing, computer vision, and predictive analytics for
-									government applications.
-								</CardDescription>
-								<div className="space-y-2 text-sm">
-									<div className="flex items-center space-x-2">
-										<CheckCircle className="h-4 w-4 text-green-400" />
-										<span>TensorFlow & PyTorch model development</span>
-									</div>
-									<div className="flex items-center space-x-2">
-										<CheckCircle className="h-4 w-4 text-green-400" />
-										<span>MLOps pipeline automation</span>
-									</div>
-									<div className="flex items-center space-x-2">
-										<CheckCircle className="h-4 w-4 text-green-400" />
-										<span>Large Language Model integration</span>
-									</div>
-									<div className="flex items-center space-x-2">
-										<CheckCircle className="h-4 w-4 text-green-400" />
-										<span>Edge AI & real-time inference</span>
-									</div>
-								</div>
-							</CardContent>
-						</Card>
-
-						{/* Software Engineering & Web Services */}
-						<Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/15 transition-all">
-							<CardHeader>
-								<div className="flex items-center space-x-3 mb-4">
-									<div className="p-2 bg-indigo-500 rounded-lg">
-										<Code className="h-6 w-6" />
-									</div>
-									<CardTitle className="text-xl">
-										Software Engineering & Web Solutions
-									</CardTitle>
-								</div>
-							</CardHeader>
-							<CardContent>
-								<CardDescription className="text-gray-200 mb-4">
-									Full-stack application development with modern frameworks,
-									microservices architecture, and enterprise-grade hosting
-									solutions. Also provide solutions for legacy systems.
-								</CardDescription>
-								<div className="space-y-2 text-sm">
-									<div className="flex items-center space-x-2">
-										<CheckCircle className="h-4 w-4 text-green-400" />
-										<span>
-											Next JS, React, Angular, Vue.js frontend frameworks
-										</span>
-									</div>
-									<div className="flex items-center space-x-2">
-										<CheckCircle className="h-4 w-4 text-green-400" />
-										<span>Microservices & API gateway architecture</span>
-									</div>
-									<div className="flex items-center space-x-2">
-										<CheckCircle className="h-4 w-4 text-green-400" />
-										<span>CI/CD pipeline automation</span>
-									</div>
-									<div className="flex items-center space-x-2">
-										<CheckCircle className="h-4 w-4 text-green-400" />
-										<span>AWS / Azure /Google GCP cloud-native hosting</span>
-									</div>
-								</div>
-							</CardContent>
-						</Card>
+							return (
+								<Card
+									key={capability.id}
+									className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/15 transition-all"
+								>
+									<CardHeader>
+										<div className="flex items-center space-x-3 mb-4">
+											<div className={`p-2 ${capability.iconColor} rounded-lg`}>
+												<IconComponent className="h-6 w-6" />
+											</div>
+											<CardTitle className="text-xl">
+												{capability.title}
+											</CardTitle>
+										</div>
+									</CardHeader>
+									<CardContent>
+										<CardDescription className="text-gray-200 mb-4">
+											{capability.description}
+										</CardDescription>
+										<div className="space-y-2 text-sm">
+											{capability.features.map((feature, index) => (
+												<div
+													key={index}
+													className="flex items-center space-x-2"
+												>
+													<CheckCircle className="h-4 w-4 text-green-400" />
+													<span>{feature}</span>
+												</div>
+											))}
+										</div>
+									</CardContent>
+								</Card>
+							)
+						})}
 					</div>
 
 					{/* Technical Standards & Compliance */}

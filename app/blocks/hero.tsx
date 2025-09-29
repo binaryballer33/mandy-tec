@@ -1,7 +1,7 @@
 import React from 'react'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import { ArrowRight } from 'lucide-react'
+import { ArrowDown, ArrowRight } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 
@@ -38,16 +38,16 @@ export default function Hero(props: HeroProps) {
 			<div className="container px-4 mx-auto relative z-10">
 				<div className="mx-auto max-w-4xl text-center">
 					<Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-100 dark:bg-blue-900 dark:text-blue-200 shadow-lg">
-						Trusted Government Contractor
+						Specialized Expertise In Information Technology NAICS Codes
 					</Badge>
 					<h1
 						className={`mb-6 text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl drop-shadow-lg ${
 							mounted && resolvedTheme === 'light' ? 'hero-heading-light' : ''
 						}`}
 					>
-						Winning Government Contracts in{' '}
+						Technical Solutions For
 						<span className="text-blue-600 dark:text-blue-300 drop-shadow-lg">
-							Technology & R&D
+							Government Agencies
 						</span>
 					</h1>
 					<p
@@ -57,9 +57,9 @@ export default function Hero(props: HeroProps) {
 								: ''
 						}`}
 					>
-						Specialized expertise in 5 key NAICS codes. From custom programming
-						to research & development, we deliver mission-critical solutions for
-						federal agencies.
+						Specialized Expertise In Tech Related NAICS Codes. From Custom
+						Programming to AI / ML and Research & Development, We Deliver
+						Mission-Critical Solutions For Government Agencies.
 					</p>
 					<div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
 						<Button
@@ -67,14 +67,15 @@ export default function Hero(props: HeroProps) {
 							className="bg-blue-600 hover:bg-blue-700 shadow-lg"
 						>
 							View Our Capabilities
-							<ArrowRight className="ml-2 h-4 w-4" />
+							<ArrowDown className="ml-2 h-4 w-4" />
 						</Button>
 						<Button
 							size="lg"
 							variant="outline"
 							className="bg-white/90 hover:bg-white text-gray-900 border-gray-300 dark:bg-background/90 dark:hover:bg-background dark:text-foreground dark:border-foreground shadow-lg"
 						>
-							Download Past Performance
+							Past Performance
+							<ArrowDown className="ml-2 h-4 w-4" />
 						</Button>
 					</div>
 				</div>
