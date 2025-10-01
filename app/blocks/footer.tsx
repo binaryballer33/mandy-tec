@@ -20,7 +20,7 @@ export default function Footer() {
 		<footer className="border-t bg-muted/50 py-12">
 			<div className="container px-4 mx-auto">
 				<div className="mx-auto max-w-6xl">
-					<div className="grid gap-8 md:grid-cols-4">
+					<div className="grid gap-8 md:grid-cols-3">
 						<div>
 							<div className="flex items-center space-x-2 mb-4">
 								<Shield className="h-6 w-6 text-blue-600" />
@@ -39,7 +39,8 @@ export default function Footer() {
 								))}
 							</ul>
 						</div>
-						<div>
+
+						{/* <div>
 							<h4 className="font-semibold text-foreground mb-4">Company</h4>
 							<ul className="space-y-2 text-sm text-muted-foreground">
 								<li>About Us</li>
@@ -47,7 +48,8 @@ export default function Footer() {
 								<li>Certifications</li>
 								<li>Contact</li>
 							</ul>
-						</div>
+						</div> */}
+
 						<div>
 							<h4 className="font-semibold text-foreground mb-4">Contact</h4>
 							<div className="space-y-2 text-sm">

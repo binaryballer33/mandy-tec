@@ -4,6 +4,7 @@ import { CheckCircle } from 'lucide-react'
 import { Linkedin } from 'lucide-react'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Team() {
 	return (
@@ -20,7 +21,7 @@ export default function Team() {
 						</p>
 					</div>
 
-					<div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
+					<div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-start">
 						<div>
 							<div className="mb-8">
 								<h3 className="text-2xl font-bold text-foreground mb-4">
@@ -67,6 +68,14 @@ export default function Team() {
 									</div>
 								</div>
 							</div>
+
+							<Image
+								src="/images/suit-profile-pic.jpg"
+								alt="Shaquille Mandy"
+								className="w-full h-auto rounded-lg mt-8"
+								width={500}
+								height={500}
+							/>
 						</div>
 
 						<div className="space-y-6">
