@@ -1,9 +1,11 @@
 import React from 'react'
 
 import { CheckCircle } from 'lucide-react'
+import { Linkedin } from 'lucide-react'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import Link from 'next/link'
 
-export default function Leadership() {
+export default function Team() {
 	return (
 		<section id="leadership" className="py-20 bg-background">
 			<div className="container px-4 mx-auto">
@@ -28,54 +30,40 @@ export default function Leadership() {
 									CEO & Founder, MANDYTEC
 								</p>
 								<p className="text-lg text-muted-foreground mb-6">
-									Fullstack Software Engineer with extensive experience in
-									government contracting, cybersecurity, and enterprise-scale
-									technology solutions. Former Amazon engineer with Top-Secret
-									SCI clearance and deep expertise in AWS cloud infrastructure.
+									Fullstack Software Engineer With Extensive Experience In
+									Government Contracting, Cybersecurity, And Enterprise-Scale
+									Technology Solutions. Former Amazon Engineer that has done
+									work at the Top-Secret SCI Clearance And Deep Expertise In AWS
+									Cloud Infrastructure.
 								</p>
 							</div>
 
 							<div className="space-y-6">
 								<div>
 									<h4 className="font-semibold text-foreground mb-3">
-										Key Qualifications
-									</h4>
-									<div className="grid grid-cols-2 gap-3">
-										<div className="flex items-center space-x-2">
-											<CheckCircle className="h-4 w-4 text-green-500" />
-											<span className="text-sm text-muted-foreground">
-												Top-Secret SCI Clearance
-											</span>
-										</div>
-										<div className="flex items-center space-x-2">
-											<CheckCircle className="h-4 w-4 text-green-500" />
-											<span className="text-sm text-muted-foreground">
-												CISSP Certified
-											</span>
-										</div>
-										<div className="flex items-center space-x-2">
-											<CheckCircle className="h-4 w-4 text-green-500" />
-											<span className="text-sm text-muted-foreground">
-												AWS Solutions Architect
-											</span>
-										</div>
-										<div className="flex items-center space-x-2">
-											<CheckCircle className="h-4 w-4 text-green-500" />
-											<span className="text-sm text-muted-foreground">
-												M.S. Cybersecurity
-											</span>
-										</div>
-									</div>
-								</div>
-
-								<div>
-									<h4 className="font-semibold text-foreground mb-3">
 										Contact Information
 									</h4>
 									<div className="space-y-2 text-sm text-muted-foreground">
-										<p>📧 shaqmandy@gmail.com</p>
+										<p>📧 shaqmandy@mandy-tec.com</p>
 										<p>📱 +1 813-816-8615</p>
-										<p>🌐 www.shaquillemandy.com</p>
+										<p>
+											<Link
+												href="https://www.shaquillemandy.com"
+												target="_blank"
+											>
+												🌐 Personal Website
+											</Link>
+										</p>
+										<p>
+											<Link
+												href="https://www.linkedin.com/in/shaquille-mandy-525079111/"
+												target="_blank"
+												className="flex items-center gap-2"
+											>
+												<Linkedin className="h-4 w-4 text-blue-500" />
+												LinkedIn
+											</Link>
+										</p>
 									</div>
 								</div>
 							</div>
@@ -97,9 +85,16 @@ export default function Leadership() {
 											May 2022 - Dec 2023
 										</p>
 										<p className="text-sm text-muted-foreground">
-											Alexa Smart Home organization, full-stack development with
-											React Native, TypeScript, Java, AWS. Supported global
-											energy consumption reduction initiatives.
+											As A Key Contributor Within The Alexa Smart Home
+											Organization, I Specialized In The Energy Consumption
+											Component Of The Service. My Full-stack Expertise Spanned
+											Both Front-end And Back-end Services For The Alexa Smart
+											Home Mobile Application, Leveraging Technologies Such As
+											React, React Native, TypeScript, Java, And AWS. My Work
+											Directly Supported The Global Initiative To Reduce
+											Electricity Consumption, Significantly Contributing To The
+											Company's Efforts In Mitigating Global Warming Impact And
+											Saving The Customer Money On Their Electric Bill.
 										</p>
 									</div>
 
@@ -111,22 +106,60 @@ export default function Leadership() {
 											Oct 2021 - May 2022
 										</p>
 										<p className="text-sm text-muted-foreground">
-											AWS BuilderTools organization, managed 20+ deployment
-											pipelines, on-call rotation supporting critical AWS
-											services.
+											As An Engineer, I Was Responsible For Enhancing The
+											Reliability And Efficiency Of Critical Software Delivery
+											Pipelines. I Diagnosed And Resolved Deployment Failures
+											Across Over 20 CI/CD Pipelines, Implementing Targeted Code
+											Changes And Developing Automation Scripts To Eliminate
+											Repetitive Manual Tasks. My Efforts Directly Contributed
+											To Maintaining High Availability For Supported Services,
+											Ensuring Minimal Downtime. I Actively Collaborated With
+											Fellow Software Engineers And Participated In A 10-person
+											On-call Rotation For The AWS BuilderTools Organization. My
+											Technical Expertise Frequently Involved Services Such As
+											CloudFormation, CodeDeploy, CodeCommit, CodeBuild,
+											CodePipeline, RDS, DynamoDB, SWF, And SQS.
+										</p>
+									</div>
+
+									<div className="border-l-4 border-purple-500 pl-4">
+										<h5 className="font-semibold text-foreground">
+											Cloud Support Engineer - Amazon Web Services
+										</h5>
+										<p className="text-sm text-muted-foreground mb-2">
+											June 2021 - Oct 2021
+										</p>
+										<p className="text-sm text-muted-foreground">
+											My Role Involved Providing Advanced Technical Support To
+											AWS Customers, Utilizing Our Ticketing System To Diagnose
+											And Resolve Complex Resource-related Issues. I Focused On
+											Root Cause Analysis, Guiding Customers Through Effective
+											Solutions And Enhancing Their Operational Proficiency
+											Within The AWS Ecosystem. My Expertise Encompassed A Broad
+											Range Of AWS Services, Including EC2, IAM, S3, VPC, KMS,
+											CloudWatch, CloudTrail, And Route 53, Among Others.
 										</p>
 									</div>
 
 									<div className="border-l-4 border-orange-500 pl-4">
 										<h5 className="font-semibold text-foreground">
-											Network Administrator - US Military
+											Network Administrator - United States Air Force
 										</h5>
 										<p className="text-sm text-muted-foreground mb-2">
 											Aug 2017 - June 2021
 										</p>
 										<p className="text-sm text-muted-foreground">
-											Maintained critical infrastructure for 10,000+ military
-											and civilian workforce up to Top-Secret SCI level.
+											My Responsibilities Included The Sustained Availability
+											And Security Of Critical Network Infrastructure For A
+											Workforce Exceeding 10,000 Military And Civilian
+											Personnel, Up To The Top-Secret SCI Classification. I Was
+											Instrumental In Ensuring Authorized Access While
+											Meticulously Safeguarding The Integrity Of Our Systems. My
+											Expertise Spans A Range Of Technologies, Including
+											TACLANES, Cisco/Juniper Routing And Switching Platforms,
+											VoIP Systems, Network Printers, Identity And Access
+											Management (IAM) Solutions, And Various End-user And
+											Server-side Hardware.
 										</p>
 									</div>
 								</CardContent>
@@ -135,7 +168,7 @@ export default function Leadership() {
 							<Card className="border-2 bg-gray-50 dark:bg-gray-900/50">
 								<CardHeader>
 									<CardTitle className="text-lg">
-										Certifications & Education
+										Certifications Held & Education
 									</CardTitle>
 								</CardHeader>
 								<CardContent>

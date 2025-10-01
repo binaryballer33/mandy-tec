@@ -9,7 +9,7 @@ import TechnicalCapabilities from './blocks/technical-capabilities'
 import WorkTogether from './blocks/work-together'
 import Footer from './blocks/footer'
 import ServicesOverview from './blocks/services-overview'
-import Leadership from './blocks/leadership'
+import Team from './blocks/team'
 import TrainingAndCerts from './blocks/training-and-certs'
 import Hero from './blocks/hero'
 import Header from './blocks/header'
@@ -66,7 +66,7 @@ export default function HomePage() {
 			<TechnicalCapabilities />
 			<TrainingAndCerts />
 			<Capabilities />
-			<Leadership />
+			<Team />
 			<ServicesOverview />
 			<WorkTogether />
 			<Footer />

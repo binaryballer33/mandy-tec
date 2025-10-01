@@ -5,26 +5,25 @@ import { Award, FileText, Shield, Users } from 'lucide-react'
 const capabilities = [
 	{
 		icon: Shield,
-		title: 'Security Clearance Ready',
+		title: 'Done Security Clearance Work',
 		description:
-			'Our team maintains active security clearances for classified projects',
+			'Our Team Has Done Security Clearance Work For The United States Air Force, Marines, Amazon Web Services And More.',
 	},
 	{
 		icon: Award,
 		title: 'Proven Track Record',
 		description:
-			'Successfully delivered 200+ government contracts across federal agencies',
+			'Team With Extensive Government and Enterprise Experience From The United States Air Force, Marines, Amazon Web Services And More.',
 	},
 	{
 		icon: FileText,
 		title: 'Compliance Expertise',
-		description:
-			'Deep knowledge of FAR, DFARS, and agency-specific requirements',
+		description: 'Knowledge Of FAR, DFARS, And Agency-Specific Requirements',
 	},
 	{
 		icon: Users,
 		title: 'Experienced Team',
-		description: 'Former government employees who understand agency needs',
+		description: 'Former Government Employees Who Understand Agency Needs',
 	},
 ]
 
@@ -37,8 +36,8 @@ export default function Capabilities() {
 						Why Government Agencies Choose Us
 					</h2>
 					<p className="mt-4 text-lg text-muted-foreground">
-						Our unique combination of technical expertise and government
-						experience
+						Our Unique Combination of Technical Expertise and Government
+						Experience
 					</p>
 				</div>
 

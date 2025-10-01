@@ -68,20 +68,7 @@ export default function ServicesOverview() {
 						<div className="relative">
 							<div className="aspect-square rounded-2xl bg-gradient-to-br from-blue-100 to-indigo-200 dark:from-blue-900 dark:to-indigo-900 p-8">
 								<div className="h-full w-full rounded-xl bg-background/80 backdrop-blur-sm p-6 flex items-center justify-center">
-									<div className="text-center">
-										<div className="text-4xl font-bold text-blue-600 mb-2">
-											200+
-										</div>
-										<div className="text-muted-foreground mb-4">
-											Successful Contracts
-										</div>
-										<div className="text-2xl font-bold text-green-600 mb-2">
-											$50M+
-										</div>
-										<div className="text-muted-foreground">
-											Contract Value Delivered
-										</div>
-									</div>
+									<div className="text-center"></div>
 								</div>
 							</div>
 						</div>
