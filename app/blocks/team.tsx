@@ -12,11 +12,11 @@ export default function Team() {
 				<div className="mx-auto max-w-6xl">
 					<div className="text-center mb-16">
 						<h2 className="text-3xl font-bold text-foreground sm:text-4xl mb-4">
-							Leadership You Can Trust
+							Leadership With Technical Expertise You Can Trust
 						</h2>
 						<p className="text-lg text-muted-foreground">
-							Meet Shaquille Mandy, CEO & Founder - A proven technology leader
-							with extensive government and enterprise experience
+							Meet Shaquille Mandy, CEO & Founder - A Proven Technology Leader
+							With Extensive Government And Enterprise Experience
 						</p>
 					</div>
 
@@ -32,8 +32,8 @@ export default function Team() {
 								<p className="text-lg text-muted-foreground mb-6">
 									Fullstack Software Engineer With Extensive Experience In
 									Government Contracting, Cybersecurity, And Enterprise-Scale
-									Technology Solutions. Former Amazon Engineer that has done
-									work at the Top-Secret SCI Clearance And Deep Expertise In AWS
+									Technology Solutions. Former Amazon Engineer That Has Done
+									Work At The Top-Secret SCI Clearance And Deep Expertise In AWS
 									Cloud Infrastructure.
 								</p>
 							</div>
