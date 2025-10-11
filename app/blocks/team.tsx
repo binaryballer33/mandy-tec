@@ -39,7 +39,15 @@ export default function Team() {
 								</p>
 							</div>
 
-							<div className="space-y-6">
+							<Image
+								src="/images/suit-profile-pic.jpg"
+								alt="Shaquille Mandy"
+								className="w-full h-auto rounded-lg mt-8"
+								width={500}
+								height={500}
+							/>
+
+							<div className="mt-8 space-y-6">
 								<div>
 									<h4 className="font-semibold text-foreground mb-3">
 										Contact Information
@@ -68,14 +76,6 @@ export default function Team() {
 									</div>
 								</div>
 							</div>
-
-							<Image
-								src="/images/suit-profile-pic.jpg"
-								alt="Shaquille Mandy"
-								className="w-full h-auto rounded-lg mt-8"
-								width={500}
-								height={500}
-							/>
 						</div>
 
 						<div className="space-y-6">
@@ -176,9 +176,7 @@ export default function Team() {
 
 							<Card className="border-2 bg-gray-50 dark:bg-gray-900/50">
 								<CardHeader>
-									<CardTitle className="text-lg">
-										Certifications Held & Education
-									</CardTitle>
+									<CardTitle className="text-lg">Certifications Held</CardTitle>
 								</CardHeader>
 								<CardContent>
 									<div className="grid grid-cols-2 gap-4 text-sm">

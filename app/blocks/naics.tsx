@@ -9,12 +9,18 @@ import { CheckCircle } from 'lucide-react'
 
 import { Badge } from '@/components/ui/badge'
 import React from 'react'
+import Image from 'next/image'
 
 const naicsCodes = [
 	{
 		code: '541511',
 		title: 'Custom Computer Programming Services',
 		description: 'Tailored Software Solutions For Government Agencies',
+	},
+	{
+		code: '611420',
+		title: 'Computer Software Training',
+		description: 'Workforce Development Through IT Certifications Training',
 	},
 	{
 		code: '541512',
@@ -36,12 +42,6 @@ const naicsCodes = [
 		code: '518210',
 		title: 'Computing Infrastructure Providers',
 		description: 'Data Processing, Web Hosting, And Cloud Services',
-	},
-	{
-		code: '517210',
-		title: 'Wireless Telecommunications Services',
-		description:
-			'Transmitting Voice, Data, And Multimedia Information Over Radio Frequencies',
 	},
 ]
 
@@ -81,6 +81,16 @@ export default function NAICS() {
 								</CardContent>
 							</Card>
 						))}
+					</div>
+
+					<div className="flex justify-center mt-12">
+						<Image
+							src="/images/SDVOSB.png"
+							alt="SDVOSB"
+							width={400}
+							height={400}
+							className="object-contain rounded-lg"
+						/>
 					</div>
 				</div>
 			</div>

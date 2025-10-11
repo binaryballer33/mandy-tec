@@ -51,13 +51,31 @@ export default function Footer() {
 						</div> */}
 
 						<div>
-							<h4 className="font-semibold text-foreground mb-4">Contact</h4>
+							<h4 className="font-semibold text-foreground mb-4">
+								Company Information
+							</h4>
 							<div className="space-y-2 text-sm">
 								<p>
 									<span className="font-semibold text-foreground">
 										Mailing Address:
 									</span>{' '}
 									1824 Tarah Trace Dr, Brandon, FL
+								</p>
+								<p>
+									<span className="font-semibold text-foreground">SAM ID:</span>{' '}
+									YPHXTY8X4A63
+								</p>
+								<p>
+									<span className="font-semibold text-foreground">
+										Business Size:
+									</span>{' '}
+									Service-Disabled Veteran Owned Small Business (SDVOSB)
+								</p>
+								<p>
+									<span className="font-semibold text-foreground">
+										NAICS Code:
+									</span>{' '}
+									541511
 								</p>
 								<p>
 									<span className="font-semibold text-foreground">Phone:</span>{' '}

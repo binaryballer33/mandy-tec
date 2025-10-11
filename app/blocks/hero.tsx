@@ -1,9 +1,8 @@
 import React from 'react'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import { ArrowDown, ArrowRight } from 'lucide-react'
-import { useTheme } from 'next-themes'
-import { useEffect, useState } from 'react'
+import { ArrowDown, FileText } from 'lucide-react'
+import Link from 'next/link'
 
 type HeroProps = {
 	getBackgroundImage: () => string
@@ -45,7 +44,7 @@ export default function Hero(props: HeroProps) {
 							mounted && resolvedTheme === 'light' ? 'hero-heading-light' : ''
 						}`}
 					>
-						Technical Solutions For
+						Technical Solutions For{' '}
 						<span className="text-blue-600 dark:text-blue-300 drop-shadow-lg">
 							Government Agencies
 						</span>
@@ -58,25 +57,34 @@ export default function Hero(props: HeroProps) {
 						}`}
 					>
 						Specialized Expertise In Tech Related NAICS Codes. From Custom
-						Programming to AI / ML and Research & Development, We Deliver
-						Mission-Critical Solutions For Government Agencies.
+						Programming, IT Workforce Training, AI / ML and Research &
+						Development, We Deliver Mission-Critical Solutions For Government
+						Agencies.
 					</p>
 					<div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
 						<Button
 							size="lg"
-							className="bg-blue-600 hover:bg-blue-700 shadow-lg"
+							className="bg-blue-300 hover:bg-blue-700 shadow-lg"
 						>
-							View Our Capabilities
-							<ArrowDown className="ml-2 h-4 w-4" />
+							<Link
+								href="https://certifications.sba.gov/capabilities/YPHXTY8X4A63"
+								target="_blank"
+								className="flex items-center gap-2"
+							>
+								<FileText className="h-4 w-4" />
+								Get Capabilities Statement
+							</Link>
 						</Button>
-						<Button
-							size="lg"
-							variant="outline"
-							className="bg-white/90 hover:bg-white text-gray-900 border-gray-300 dark:bg-background/90 dark:hover:bg-background dark:text-foreground dark:border-foreground shadow-lg"
-						>
-							Past Performance
-							<ArrowDown className="ml-2 h-4 w-4" />
-						</Button>
+						<Link href="#leadership">
+							<Button
+								size="lg"
+								variant="outline"
+								className="bg-white/90 hover:bg-white text-gray-900 border-gray-300 dark:bg-background/90 dark:hover:bg-background dark:text-foreground dark:border-foreground shadow-lg"
+							>
+								Past Performance
+								<ArrowDown className="ml-2 h-4 w-4" />
+							</Button>
+						</Link>
 					</div>
 				</div>
 			</div>
